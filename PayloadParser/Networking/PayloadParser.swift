@@ -8,11 +8,7 @@
 
 import Foundation
 
-protocol Payload {
-    func payload<T: Codable>(from data: Data?, completion: @escaping (Result<T>) -> Void)
-}
-
-class PayloadParser: Payload {
+class PayloadParser: PayloadService {
     
     func payload<T: Codable>(from data: Data?, completion: @escaping (Result<T>) -> Void) {
         guard let dataToDecode = data else {

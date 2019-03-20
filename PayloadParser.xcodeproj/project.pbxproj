@@ -17,6 +17,7 @@
 		0198A0F1223D7FE50074775C /* PayloadParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198A0F0223D7FE50074775C /* PayloadParser.swift */; };
 		0198A0F4223D80750074775C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198A0F3223D80750074775C /* Result.swift */; };
 		0198A0F6223D91E90074775C /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198A0F5223D91E90074775C /* CustomError.swift */; };
+		0198A0FE2242670D0074775C /* PayloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198A0FD2242670D0074775C /* PayloadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0198A0F0223D7FE50074775C /* PayloadParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadParser.swift; sourceTree = "<group>"; };
 		0198A0F3223D80750074775C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0198A0F5223D91E90074775C /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		0198A0FD2242670D0074775C /* PayloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				0198A0C6223D7D1F0074775C /* Assets.xcassets */,
 				0198A0C8223D7D1F0074775C /* LaunchScreen.storyboard */,
 				0198A0CB223D7D1F0074775C /* Info.plist */,
+				0198A0FC224266FD0074775C /* Services */,
 				0198A0FB224115F90074775C /* Networking */,
 				0198A0ED223D7D6C0074775C /* Model */,
 				0198A0F2223D80660074775C /* Helper */,
@@ -156,6 +159,14 @@
 				0198A0F0223D7FE50074775C /* PayloadParser.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		0198A0FC224266FD0074775C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0198A0FD2242670D0074775C /* PayloadService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 				0198A0F1223D7FE50074775C /* PayloadParser.swift in Sources */,
 				0198A0EF223D7E640074775C /* Response.swift in Sources */,
 				0198A0C0223D7D1D0074775C /* AppDelegate.swift in Sources */,
+				0198A0FE2242670D0074775C /* PayloadService.swift in Sources */,
 				0198A0F6223D91E90074775C /* CustomError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
