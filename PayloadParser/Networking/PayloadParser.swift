@@ -9,8 +9,8 @@
 import Foundation
 
 class PayloadParser: PayloadService {
-    
-    func payload<T: Codable>(from data: Data?, completion: @escaping (Result<T>) -> Void) {
+
+    func payload<T: Codable>(from data: Data?, _ type: T.Type, completion: @escaping (Result<T>) -> Void) {
         guard let dataToDecode = data else {
             completion(Result.failure(BackendError.dataNotFound))
             return
